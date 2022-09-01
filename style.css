@@ -36,17 +36,20 @@
     grid-area: main;
     background-color:var(--background-main);
     margin: 0 5rem;
+    position: relative;
+}
 
-    /* container grid to content*/
+/* container grid to content*/
+.main__list{
     background-color: var(--background-main);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 3rem;
-    position: relative;
     padding: 3rem;
+    margin-bottom: 6rem;
 }
 /* Content */
-.main__pagination {
+.main__pagination{
     position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -54,6 +57,7 @@
 	justify-content: center;
 	gap: 1.25rem;
 	padding: 0.625rem;
+    margin-bottom: 1rem;
 }
 
 .main__btn{
@@ -65,7 +69,7 @@
 	text-align: center;
 	height: 3.5rem;
 	width: 12.5rem;
-	background: var(--background-footer);
+	background: var(--color-btn);
 	color: var(--color-text);
 	border-radius: 6rem;
 	font-family: var(--first-type);
@@ -74,7 +78,7 @@
 }
 
 .main__btn:hover{
-    background: var(--color-btn);
+    background: var(--color-btn-hover);
     color: var(--background-footer);
 }
 
