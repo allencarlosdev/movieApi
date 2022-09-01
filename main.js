@@ -24,6 +24,7 @@ const loadMovies = async () =>{
 
         if (answer.status === 200) {
             const data = await answer.json();
+            movies ="";
             data.results.forEach(movie =>{
                 movies +=`
                 <div class="main__movie">
@@ -32,8 +33,7 @@ const loadMovies = async () =>{
                 </div>
                 `;
             });
-
-            document.getElementById("main").innerHTML= movies;
+            document.getElementById("mainList").innerHTML= movies;
         }else if(answer.status === 401){
             console.log("You put the key wrong");
         }else if(answer.status === 404){
