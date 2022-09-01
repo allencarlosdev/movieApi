@@ -9,11 +9,11 @@
 :root {
     --background-header:#191919;
     --background-body: #242424;
-    --background-main: #242424;
+    --background-main: #363636;
     --background-footer: #191919;
     --first-type: sans-serif, Helvetica, Arial;
     --color-text: #fbd758;
-    --color-btn:#605b49;
+    --color-btn:#191919;
     --link-color: white;
     /* --second-type: Verdana; */
 }

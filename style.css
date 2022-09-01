@@ -36,10 +36,66 @@
     grid-area: main;
     background-color:var(--background-main);
     margin: 0 5rem;
+
+    /* container grid to content*/
+    background-color: var(--background-main);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+    position: relative;
+    padding: 3rem;
+}
+/* Content */
+.main__pagination {
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 1.25rem;
+	padding: 0.625rem;
+}
+
+.main__btn{
+    cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 3.5rem;
+	width: 12.5rem;
+	background: var(--background-footer);
+	color: var(--color-text);
+	border-radius: 6rem;
+	font-family: var(--first-type);
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.main__btn:hover{
+    background: var(--color-btn);
+    color: var(--background-footer);
+}
+
+/* movie */
+.main__movie{
+    text-align: center;
+}
+
+.main__poster{
+    width: 100%;
+	margin-bottom: 0.625rem;
+	border-radius: 0.938rem;
+}
+
+.main__movieTitle{
+    font-size: 16px;
+	font-weight: 600;
 }
 
 /* footer */
-.footer{
+.footer {
     grid-area: footer;
     background-color: var(--background-footer);
     display: flex;
