@@ -7,6 +7,8 @@
 
 /* typography */
 :root {
+    /* dark mode */
+    --transparent-color: rgba(255, 0, 0, 0);
     --background-header:#191919;
     --background-body: #242424;
     --background-main: #363636;
@@ -16,6 +18,14 @@
     --color-btn:#191919;
     --color-btn-hover:#fbd758;
     --link-color: white;
+
+    /* light mode */
+    --light-header:#363636;
+    --light-body: #f5edd2;
+    --light-main: #f4e5ae;
+    --light-text: #363636;
+    --light-btn:#363636;
+    --light-btn-hover:#fbd758;
     /* --second-type: Verdana; */
 }
 

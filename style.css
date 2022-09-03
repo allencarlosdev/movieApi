@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header__socials{
@@ -29,6 +30,21 @@
 .header__link{
     font-size: 3rem;
     margin: 0 1.5rem;
+}
+
+/* ****** lightThemeButton ******* */
+.light-theme-btn{
+    position: absolute;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--transparent-color);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: all .3s ease-out;
 }
 
 /* main */
@@ -109,4 +125,33 @@
 
 .footer__a{
     color: var(--link-color);
+}
+
+/************* LIGHT MODE ***************/
+.header.light-mode{
+    background-color: var(--light-header);
+}
+
+.grid-container.light-mode{
+    background-color: var(--light-body);
+}
+
+.main.light-mode{
+    background-color: var(--light-main);
+}
+
+.main__list.light-mode{
+    background-color: var(--light-main);
+    color: var(--light-text);
+}
+
+.main__btn.light-mode{
+    background-color: var(--light-header);
+}
+.main__btn.light-mode:hover{
+    background-color: var(--color-btn-hover);
+}
+
+.footer.light-mode{
+    background-color: var(--light-header);
 }
